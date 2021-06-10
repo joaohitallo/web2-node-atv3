@@ -12,10 +12,10 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Generos.hasMany(models.Filmes, {
-        foreignKey: 'filme_id'
+        foreignKey: 'id'
       })
       Generos.hasMany(models.Series, {
-        foreignKey: 'serie_id'
+        foreignKey: 'id'
       })
     }
   };
