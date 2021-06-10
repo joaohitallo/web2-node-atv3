@@ -20,7 +20,7 @@ module.exports = {
       generos_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        references: {model:'Pessoas', key:'id'}
+        references: {model:'Generos', key:'id'}
       },
       createdAt: {
         allowNull: false,
